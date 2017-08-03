@@ -69,6 +69,12 @@
     <Compile Include="customer_info.Designer.cs">
       <DependentUpon>customer_info.cs</DependentUpon>
     </Compile>
+    <Compile Include="edit_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_customer.Designer.cs">
+      <DependentUpon>edit_customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="modify_staff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="customer_info.resx">
       <DependentUpon>customer_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_customer.resx">
+      <DependentUpon>edit_customer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modify_staff.resx">
       <DependentUpon>modify_staff.cs</DependentUpon>

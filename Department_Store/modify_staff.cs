@@ -236,7 +236,6 @@ namespace Department_Store
             MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
             MySqlConnection Con = new MySqlConnection(myconn);
             int salary = parseSalary(this.salary.Text);
-            int count = 0;
             string query = "UPDATE department_store.staff SET staff_name = '" + this.staff_name.Text + "', Designation = '" + this.designation.Text + "', phone_num = '" + this.phone_number.Text + "', address = '" + this.address.Text + "', salary = " + salary + " where Staff_ID = '" + this.staff_id.Text + "'";
            
             MySqlCommand command = new MySqlCommand(query, Con);

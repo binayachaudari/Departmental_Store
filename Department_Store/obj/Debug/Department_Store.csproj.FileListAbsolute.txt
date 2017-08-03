@@ -115,3 +115,6 @@ D:\Departmental_Store\Department_Store\obj\Debug\Department_Store.main_page.reso
 D:\Departmental_Store\Department_Store\obj\Debug\Department_Store.Product_update.resources
 D:\Departmental_Store\Department_Store\obj\Debug\Department_Store.Properties.Resources.resources
 D:\Departmental_Store\Department_Store\obj\Debug\Department_Store.csproj.GenerateResource.Cache
+D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_customer.resources
+D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.customer_info.resources
+D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources

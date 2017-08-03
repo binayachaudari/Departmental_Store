@@ -118,6 +118,13 @@ namespace Department_Store
             customer_info form = new customer_info(staffid);
             form.Show();
         }
+
+        private void deleteCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            edit_customer form = new edit_customer(staffid);
+            form.Show();
+        }
       
     }
 }

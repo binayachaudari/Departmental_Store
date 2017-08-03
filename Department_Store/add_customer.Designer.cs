@@ -57,6 +57,7 @@
             this.back_btn.TabIndex = 20;
             this.back_btn.Text = "BACK";
             this.back_btn.UseVisualStyleBackColor = true;
+            this.back_btn.Click += new System.EventHandler(this.back_btn_Click);
             // 
             // add_btn
             // 
@@ -66,6 +67,7 @@
             this.add_btn.TabIndex = 19;
             this.add_btn.Text = "ADD";
             this.add_btn.UseVisualStyleBackColor = true;
+            this.add_btn.Click += new System.EventHandler(this.add_btn_Click);
             // 
             // cust_address
             // 
@@ -94,6 +96,7 @@
             this.cust_id.Name = "cust_id";
             this.cust_id.Size = new System.Drawing.Size(100, 20);
             this.cust_id.TabIndex = 15;
+            this.cust_id.Click += new System.EventHandler(this.cust_id_Click);
             // 
             // label4
             // 
