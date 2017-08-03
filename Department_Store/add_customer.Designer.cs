@@ -101,38 +101,38 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(34, 126);
+            this.label4.Location = new System.Drawing.Point(42, 122);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
+            this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Address :-";
+            this.label4.Text = "Address";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 91);
+            this.label3.Location = new System.Drawing.Point(32, 87);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 13);
+            this.label3.Size = new System.Drawing.Size(64, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Contact No :-";
+            this.label3.Text = "Contact No ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(34, 61);
+            this.label2.Location = new System.Drawing.Point(58, 54);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "Name :-";
+            this.label2.Text = "Name ";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(34, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Customer_id :-";
+            this.label1.Text = "Customer_id ";
             // 
             // add_customer
             // 
@@ -151,7 +151,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "add_customer";
-            this.Text = "add_customer";
+            this.Text = "ADD CUSTOMER";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,26 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.masterEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dailyTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.weeklyTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.productToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.beveragesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dessertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dairyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cerealToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chocolateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.grainsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jarredCannedFoodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.junkFoodToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toiletariesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enquiryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label2 = new System.Windows.Forms.Label();
             this.ProductName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,159 +41,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.status = new System.Windows.Forms.Label();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.homeToolStripMenuItem,
-            this.masterEntryToolStripMenuItem,
-            this.salesDataToolStripMenuItem,
-            this.stockToolStripMenuItem,
-            this.productToolStripMenuItem,
-            this.enquiryToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(473, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // homeToolStripMenuItem
-            // 
-            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.homeToolStripMenuItem.Text = "Home";
-            // 
-            // masterEntryToolStripMenuItem
-            // 
-            this.masterEntryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addCustomerToolStripMenuItem,
-            this.deleteCustomerToolStripMenuItem});
-            this.masterEntryToolStripMenuItem.Name = "masterEntryToolStripMenuItem";
-            this.masterEntryToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.masterEntryToolStripMenuItem.Text = "Master Entry";
-            // 
-            // addCustomerToolStripMenuItem
-            // 
-            this.addCustomerToolStripMenuItem.Name = "addCustomerToolStripMenuItem";
-            this.addCustomerToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.addCustomerToolStripMenuItem.Text = "Add Customer";
-            // 
-            // deleteCustomerToolStripMenuItem
-            // 
-            this.deleteCustomerToolStripMenuItem.Name = "deleteCustomerToolStripMenuItem";
-            this.deleteCustomerToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.deleteCustomerToolStripMenuItem.Text = "Delete Customer";
-            // 
-            // salesDataToolStripMenuItem
-            // 
-            this.salesDataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dailyTransactionToolStripMenuItem,
-            this.weeklyTransactionToolStripMenuItem});
-            this.salesDataToolStripMenuItem.Name = "salesDataToolStripMenuItem";
-            this.salesDataToolStripMenuItem.Size = new System.Drawing.Size(72, 20);
-            this.salesDataToolStripMenuItem.Text = "Sales Data";
-            // 
-            // dailyTransactionToolStripMenuItem
-            // 
-            this.dailyTransactionToolStripMenuItem.Name = "dailyTransactionToolStripMenuItem";
-            this.dailyTransactionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.dailyTransactionToolStripMenuItem.Text = "Daily Transaction";
-            // 
-            // weeklyTransactionToolStripMenuItem
-            // 
-            this.weeklyTransactionToolStripMenuItem.Name = "weeklyTransactionToolStripMenuItem";
-            this.weeklyTransactionToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.weeklyTransactionToolStripMenuItem.Text = "Weekly Transaction";
-            // 
-            // stockToolStripMenuItem
-            // 
-            this.stockToolStripMenuItem.Name = "stockToolStripMenuItem";
-            this.stockToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.stockToolStripMenuItem.Text = "Stock";
-            // 
-            // productToolStripMenuItem
-            // 
-            this.productToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.beveragesToolStripMenuItem,
-            this.dessertToolStripMenuItem,
-            this.dairyToolStripMenuItem,
-            this.cerealToolStripMenuItem,
-            this.chocolateToolStripMenuItem,
-            this.grainsToolStripMenuItem,
-            this.jarredCannedFoodToolStripMenuItem,
-            this.junkFoodToolStripMenuItem,
-            this.toiletariesToolStripMenuItem});
-            this.productToolStripMenuItem.Name = "productToolStripMenuItem";
-            this.productToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.productToolStripMenuItem.Text = "Product";
-            // 
-            // beveragesToolStripMenuItem
-            // 
-            this.beveragesToolStripMenuItem.Name = "beveragesToolStripMenuItem";
-            this.beveragesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.beveragesToolStripMenuItem.Text = "Beverages";
-            // 
-            // dessertToolStripMenuItem
-            // 
-            this.dessertToolStripMenuItem.Name = "dessertToolStripMenuItem";
-            this.dessertToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.dessertToolStripMenuItem.Text = "Bakery";
-            // 
-            // dairyToolStripMenuItem
-            // 
-            this.dairyToolStripMenuItem.Name = "dairyToolStripMenuItem";
-            this.dairyToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.dairyToolStripMenuItem.Text = "Dairy";
-            // 
-            // cerealToolStripMenuItem
-            // 
-            this.cerealToolStripMenuItem.Name = "cerealToolStripMenuItem";
-            this.cerealToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.cerealToolStripMenuItem.Text = "Cereal";
-            // 
-            // chocolateToolStripMenuItem
-            // 
-            this.chocolateToolStripMenuItem.Name = "chocolateToolStripMenuItem";
-            this.chocolateToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.chocolateToolStripMenuItem.Text = "Chocolate";
-            // 
-            // grainsToolStripMenuItem
-            // 
-            this.grainsToolStripMenuItem.Name = "grainsToolStripMenuItem";
-            this.grainsToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.grainsToolStripMenuItem.Text = "Grains";
-            // 
-            // jarredCannedFoodToolStripMenuItem
-            // 
-            this.jarredCannedFoodToolStripMenuItem.Name = "jarredCannedFoodToolStripMenuItem";
-            this.jarredCannedFoodToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.jarredCannedFoodToolStripMenuItem.Text = "Jarred Canned Food";
-            // 
-            // junkFoodToolStripMenuItem
-            // 
-            this.junkFoodToolStripMenuItem.Name = "junkFoodToolStripMenuItem";
-            this.junkFoodToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.junkFoodToolStripMenuItem.Text = "Junk Food";
-            // 
-            // toiletariesToolStripMenuItem
-            // 
-            this.toiletariesToolStripMenuItem.Name = "toiletariesToolStripMenuItem";
-            this.toiletariesToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
-            this.toiletariesToolStripMenuItem.Text = "Toiletaries";
-            // 
-            // enquiryToolStripMenuItem
-            // 
-            this.enquiryToolStripMenuItem.Name = "enquiryToolStripMenuItem";
-            this.enquiryToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            this.enquiryToolStripMenuItem.Text = "About Us";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(39, 97);
+            this.label2.Location = new System.Drawing.Point(40, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 16);
             this.label2.TabIndex = 4;
@@ -221,7 +55,7 @@
             // 
             // ProductName
             // 
-            this.ProductName.Location = new System.Drawing.Point(173, 96);
+            this.ProductName.Location = new System.Drawing.Point(174, 88);
             this.ProductName.Name = "ProductName";
             this.ProductName.Size = new System.Drawing.Size(156, 20);
             this.ProductName.TabIndex = 5;
@@ -230,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(39, 141);
+            this.label3.Location = new System.Drawing.Point(78, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 6;
@@ -238,7 +72,7 @@
             // 
             // Quantity
             // 
-            this.Quantity.Location = new System.Drawing.Point(173, 140);
+            this.Quantity.Location = new System.Drawing.Point(174, 132);
             this.Quantity.Name = "Quantity";
             this.Quantity.Size = new System.Drawing.Size(156, 20);
             this.Quantity.TabIndex = 7;
@@ -247,7 +81,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(39, 186);
+            this.label4.Location = new System.Drawing.Point(97, 177);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 16);
             this.label4.TabIndex = 8;
@@ -255,7 +89,7 @@
             // 
             // Rate
             // 
-            this.Rate.Location = new System.Drawing.Point(173, 185);
+            this.Rate.Location = new System.Drawing.Point(174, 177);
             this.Rate.Name = "Rate";
             this.Rate.Size = new System.Drawing.Size(156, 20);
             this.Rate.TabIndex = 9;
@@ -264,7 +98,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(39, 227);
+            this.label5.Location = new System.Drawing.Point(40, 219);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 16);
             this.label5.TabIndex = 10;
@@ -272,7 +106,7 @@
             // 
             // manufacturer
             // 
-            this.manufacturer.Location = new System.Drawing.Point(173, 227);
+            this.manufacturer.Location = new System.Drawing.Point(174, 219);
             this.manufacturer.Name = "manufacturer";
             this.manufacturer.Size = new System.Drawing.Size(156, 20);
             this.manufacturer.TabIndex = 11;
@@ -281,7 +115,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(39, 55);
+            this.label6.Location = new System.Drawing.Point(60, 47);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 16);
             this.label6.TabIndex = 12;
@@ -301,7 +135,7 @@
             "jarred__canned",
             "junk__food",
             "toiletaries"});
-            this.category.Location = new System.Drawing.Point(173, 50);
+            this.category.Location = new System.Drawing.Point(174, 42);
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(121, 21);
             this.category.TabIndex = 13;
@@ -309,7 +143,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(154, 316);
+            this.button1.Location = new System.Drawing.Point(155, 308);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 14;
@@ -319,7 +153,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(286, 316);
+            this.button2.Location = new System.Drawing.Point(287, 308);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 15;
@@ -354,13 +188,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.ProductName);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.menuStrip1);
             this.Name = "add_product";
             this.ShowIcon = false;
-            this.Text = "Add Product";
+            this.Text = "ADD PRODUCT";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.add_product_FormClosed);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -368,20 +199,6 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem masterEntryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addCustomerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteCustomerToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesDataToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dailyTransactionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem weeklyTransactionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem stockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem productToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem beveragesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dessertToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dairyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem enquiryToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox ProductName;
         private System.Windows.Forms.Label label3;
@@ -395,11 +212,5 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label status;
-        private System.Windows.Forms.ToolStripMenuItem cerealToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem chocolateToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem grainsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jarredCannedFoodToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem junkFoodToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toiletariesToolStripMenuItem;
     }
 }

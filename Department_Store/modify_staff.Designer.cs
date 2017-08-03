@@ -135,7 +135,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(39, 237);
+            this.label5.Location = new System.Drawing.Point(81, 237);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 21;
@@ -144,7 +144,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(39, 194);
+            this.label6.Location = new System.Drawing.Point(72, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 20;
@@ -162,7 +162,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(39, 107);
+            this.label4.Location = new System.Drawing.Point(54, 107);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 18;
@@ -171,7 +171,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 63);
+            this.label2.Location = new System.Drawing.Point(54, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 17;
@@ -180,7 +180,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 20);
+            this.label1.Location = new System.Drawing.Point(71, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 16;
@@ -246,9 +246,9 @@
             this.SearchByCategory.AutoSize = true;
             this.SearchByCategory.Location = new System.Drawing.Point(248, 25);
             this.SearchByCategory.Name = "SearchByCategory";
-            this.SearchByCategory.Size = new System.Drawing.Size(44, 13);
+            this.SearchByCategory.Size = new System.Drawing.Size(51, 13);
             this.SearchByCategory.TabIndex = 3;
-            this.SearchByCategory.Text = "Search:";
+            this.SearchByCategory.Text = "Keyword:";
             // 
             // SearchByName
             // 

@@ -40,17 +40,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(204, 48);
+            this.label2.Location = new System.Drawing.Point(205, 48);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 16;
-            this.label2.Text = "Search";
+            this.label2.Text = "Keyword";
             // 
             // search
             // 
             this.search.Location = new System.Drawing.Point(272, 45);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(102, 20);
+            this.search.Size = new System.Drawing.Size(125, 20);
             this.search.TabIndex = 1;
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
@@ -66,7 +66,7 @@
             "Phone Num"});
             this.comboBox1.Location = new System.Drawing.Point(272, 14);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(102, 21);
+            this.comboBox1.Size = new System.Drawing.Size(125, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -90,7 +90,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(204, 17);
+            this.label1.Location = new System.Drawing.Point(197, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 13;

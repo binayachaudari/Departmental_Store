@@ -150,11 +150,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 78);
+            this.label2.Location = new System.Drawing.Point(150, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 58;
-            this.label2.Text = "Search";
+            this.label2.Text = "Keyword";
             // 
             // search
             // 
@@ -194,7 +194,7 @@
             this.CustomerView.Name = "CustomerView";
             this.CustomerView.ReadOnly = true;
             this.CustomerView.ShowEditingIcon = false;
-            this.CustomerView.Size = new System.Drawing.Size(465, 362);
+            this.CustomerView.Size = new System.Drawing.Size(465, 356);
             this.CustomerView.TabIndex = 57;
             // 
             // back_btn
@@ -210,7 +210,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 40);
+            this.label1.Location = new System.Drawing.Point(139, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 55;
@@ -218,14 +218,15 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.CustomerView);
             this.groupBox1.Controls.Add(this.search);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Location = new System.Drawing.Point(0, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(486, 529);
+            this.groupBox1.Size = new System.Drawing.Size(486, 523);
             this.groupBox1.TabIndex = 72;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "SEARCH CUSTOMER";
@@ -243,6 +244,7 @@
             this.groupBox2.Controls.Add(this.cust_name);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Location = new System.Drawing.Point(493, 6);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(339, 253);
@@ -259,7 +261,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.back_btn);
             this.Name = "edit_customer";
-            this.Text = "edit_customer";
+            this.Text = "EDIT CUSTOMER INFO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.edit_customer_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.CustomerView)).EndInit();
             this.groupBox1.ResumeLayout(false);
