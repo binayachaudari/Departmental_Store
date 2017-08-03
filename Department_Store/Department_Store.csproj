@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_customer.Designer.cs">
+      <DependentUpon>add_customer.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_product.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,6 +62,12 @@
     </Compile>
     <Compile Include="add_staff.Designer.cs">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="customer_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="customer_info.Designer.cs">
+      <DependentUpon>customer_info.cs</DependentUpon>
     </Compile>
     <Compile Include="modify_staff.cs">
       <SubType>Form</SubType>
@@ -89,11 +101,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add_customer.resx">
+      <DependentUpon>add_customer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_product.resx">
       <DependentUpon>add_product.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="add_staff.resx">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_info.resx">
+      <DependentUpon>customer_info.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="modify_staff.resx">
       <DependentUpon>modify_staff.cs</DependentUpon>

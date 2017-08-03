@@ -105,7 +105,19 @@ namespace Department_Store
                 staffToolStripMenuItem.Visible = false;
         }
 
+        private void addCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            add_customer form = new add_customer(staffid);
+            form.Show();
+        }
 
+        private void customerInfoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            customer_info form = new customer_info(staffid);
+            form.Show();
+        }
       
     }
 }

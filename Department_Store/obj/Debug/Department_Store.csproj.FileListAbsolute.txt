@@ -79,3 +79,22 @@ D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.mai
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.Product_update.resources
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.Properties.Resources.resources
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.csproj.GenerateResource.Cache
+D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_customer.resources
+D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.customer_info.resources
+I:\Departmental_Store\Department_Store\bin\Debug\Department_Store.exe.config
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.exe
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.pdb
+I:\Departmental_Store\Department_Store\bin\Debug\Department_Store.exe
+I:\Departmental_Store\Department_Store\bin\Debug\Department_Store.pdb
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.csprojResolveAssemblyReference.cache
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_customer.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_product.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_staff.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.customer_info.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.modify_staff.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.Product_info.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.login_form.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.main_page.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.Product_update.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.Properties.Resources.resources
+I:\Departmental_Store\Department_Store\obj\Debug\Department_Store.csproj.GenerateResource.Cache
