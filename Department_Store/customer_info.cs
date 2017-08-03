@@ -87,6 +87,11 @@ namespace Department_Store
             CustomerView.DataSource = DV;
         }
 
+        private void customer_info_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
 
 
       
