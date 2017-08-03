@@ -118,7 +118,7 @@
             this.Controls.Add(this.CustomerView);
             this.Controls.Add(this.label1);
             this.Name = "customer_info";
-            this.Text = "customer_info";
+            this.Text = "CUSTOMER INFO";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.customer_info_FormClosed);
             this.Load += new System.EventHandler(this.customer_info_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CustomerView)).EndInit();

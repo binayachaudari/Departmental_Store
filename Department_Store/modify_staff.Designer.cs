@@ -320,7 +320,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "modify_staff";
-            this.Text = "modify_staff";
+            this.Text = "MODIFY STAFF";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.modify_staff_FormClosed);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

@@ -14,10 +14,18 @@ namespace Department_Store
     public partial class Product_info : Form
     {
         DataTable dbdataset;
+        string staffid;
         public Product_info()
         {
             InitializeComponent();
            
+        }
+
+        public Product_info(string getStaffID)
+        {
+            staffid = getStaffID;
+            InitializeComponent();
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -29,8 +37,8 @@ namespace Department_Store
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            main_page form = new main_page();
+            this.Hide();
+            main_page form = new main_page(staffid);
             form.Show();
         }
 

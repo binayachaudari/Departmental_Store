@@ -21,7 +21,7 @@ namespace Department_Store
 
         void AutoCompleteText(){
             
-            product_name.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            product_name.AutoCompleteMode = AutoCompleteMode.Suggest;
             product_name.AutoCompleteSource = AutoCompleteSource.CustomSource;
             AutoCompleteStringCollection coll = new AutoCompleteStringCollection();
 

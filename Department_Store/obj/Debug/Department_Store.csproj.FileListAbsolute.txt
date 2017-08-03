@@ -118,3 +118,4 @@ D:\Departmental_Store\Department_Store\obj\Debug\Department_Store.csproj.Generat
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_customer.resources
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.customer_info.resources
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources
+D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources

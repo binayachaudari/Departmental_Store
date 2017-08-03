@@ -43,7 +43,7 @@ namespace Department_Store
         private void productToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Product_info form = new Product_info();
+            Product_info form = new Product_info(staffid);
             form.Show();
 
         }
