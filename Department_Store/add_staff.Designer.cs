@@ -36,14 +36,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.staff_id = new System.Windows.Forms.TextBox();
             this.staff_name = new System.Windows.Forms.TextBox();
-            this.designation = new System.Windows.Forms.TextBox();
             this.salary = new System.Windows.Forms.TextBox();
             this.address = new System.Windows.Forms.TextBox();
             this.phone_number = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.status = new System.Windows.Forms.Label();
+            this.designation = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.sex = new System.Windows.Forms.ComboBox();
+            this.messagebox = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 171);
+            this.label3.Location = new System.Drawing.Point(40, 199);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 3;
@@ -77,7 +79,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 128);
+            this.label4.Location = new System.Drawing.Point(40, 156);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 2;
@@ -86,7 +88,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(40, 258);
+            this.label5.Location = new System.Drawing.Point(40, 283);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 5;
@@ -95,7 +97,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(40, 215);
+            this.label6.Location = new System.Drawing.Point(40, 240);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 4;
@@ -106,40 +108,32 @@
             this.staff_id.Location = new System.Drawing.Point(173, 41);
             this.staff_id.Name = "staff_id";
             this.staff_id.Size = new System.Drawing.Size(100, 20);
-            this.staff_id.TabIndex = 6;
-            this.staff_id.Click += new System.EventHandler(this.staff_id_Click);
+            this.staff_id.TabIndex = 5;
             // 
             // staff_name
             // 
             this.staff_name.Location = new System.Drawing.Point(173, 84);
             this.staff_name.Name = "staff_name";
             this.staff_name.Size = new System.Drawing.Size(100, 20);
-            this.staff_name.TabIndex = 7;
-            // 
-            // designation
-            // 
-            this.designation.Location = new System.Drawing.Point(173, 128);
-            this.designation.Name = "designation";
-            this.designation.Size = new System.Drawing.Size(100, 20);
-            this.designation.TabIndex = 8;
+            this.staff_name.TabIndex = 6;
             // 
             // salary
             // 
-            this.salary.Location = new System.Drawing.Point(173, 255);
+            this.salary.Location = new System.Drawing.Point(173, 280);
             this.salary.Name = "salary";
             this.salary.Size = new System.Drawing.Size(100, 20);
             this.salary.TabIndex = 11;
             // 
             // address
             // 
-            this.address.Location = new System.Drawing.Point(173, 212);
+            this.address.Location = new System.Drawing.Point(173, 237);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(100, 20);
             this.address.TabIndex = 10;
             // 
             // phone_number
             // 
-            this.phone_number.Location = new System.Drawing.Point(173, 168);
+            this.phone_number.Location = new System.Drawing.Point(173, 196);
             this.phone_number.Name = "phone_number";
             this.phone_number.Size = new System.Drawing.Size(100, 20);
             this.phone_number.TabIndex = 9;
@@ -174,28 +168,68 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // status
+            // designation
             // 
-            this.status.AutoSize = true;
-            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status.Location = new System.Drawing.Point(44, 380);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(0, 16);
-            this.status.TabIndex = 15;
+            this.designation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.designation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.designation.FormattingEnabled = true;
+            this.designation.Items.AddRange(new object[] {
+            "Cashier",
+            "Accountant",
+            "Sales Boy",
+            "Cleaner",
+            "Guard"});
+            this.designation.Location = new System.Drawing.Point(173, 156);
+            this.designation.Name = "designation";
+            this.designation.Size = new System.Drawing.Size(100, 21);
+            this.designation.TabIndex = 8;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(40, 120);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Gender";
+            // 
+            // sex
+            // 
+            this.sex.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.sex.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.sex.FormattingEnabled = true;
+            this.sex.Items.AddRange(new object[] {
+            "Male",
+            "Female",
+            "Other"});
+            this.sex.Location = new System.Drawing.Point(173, 120);
+            this.sex.Name = "sex";
+            this.sex.Size = new System.Drawing.Size(100, 21);
+            this.sex.TabIndex = 7;
+            // 
+            // messagebox
+            // 
+            this.messagebox.AutoSize = true;
+            this.messagebox.Location = new System.Drawing.Point(43, 385);
+            this.messagebox.Name = "messagebox";
+            this.messagebox.Size = new System.Drawing.Size(0, 13);
+            this.messagebox.TabIndex = 17;
             // 
             // add_staff
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(402, 422);
-            this.Controls.Add(this.status);
+            this.Controls.Add(this.messagebox);
+            this.Controls.Add(this.sex);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.designation);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.salary);
             this.Controls.Add(this.address);
             this.Controls.Add(this.phone_number);
-            this.Controls.Add(this.designation);
             this.Controls.Add(this.staff_name);
             this.Controls.Add(this.staff_id);
             this.Controls.Add(this.label5);
@@ -222,13 +256,15 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox staff_id;
         private System.Windows.Forms.TextBox staff_name;
-        private System.Windows.Forms.TextBox designation;
         private System.Windows.Forms.TextBox salary;
         private System.Windows.Forms.TextBox address;
         private System.Windows.Forms.TextBox phone_number;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label status;
+        private System.Windows.Forms.ComboBox designation;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox sex;
+        private System.Windows.Forms.Label messagebox;
     }
 }

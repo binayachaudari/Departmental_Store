@@ -304,15 +304,17 @@ namespace Department_Store
                 MessageBox.Show(ex.Message);
             }
             Con.Close();
-
-            if(position == "accountant"){
-                query = "DELETE FROM department_store.login where staff_id = '"+this.staff_id.Text+"'";
-                MySqlCommand delete_login = new MySqlCommand(query, Con);
+               
+            if(position == "manager")
+            {
+                this.Message.Text = "Manager Cannot be Removed ";
+            }
+            else{
+                 //USING ON DELETE CASCADE
                 MySqlCommand delete_staff = new MySqlCommand("DELETE FROM department_store.staff where Staff_ID = '"+this.staff_id.Text+"';", Con);
                 try
                 {
                     Con.Open();
-                    delete_login.ExecuteNonQuery();
                     delete_staff.ExecuteNonQuery();
                     this.Message.Text = "STAFF DELETED!";
                 }
@@ -322,33 +324,7 @@ namespace Department_Store
                 }
                 Con.Close();
             }
-            else if(position == "manager")
-            {
-                this.Message.Text = "Manager Cannot be Removed ";
-            }
-            else
-            {
-                MySqlCommand delete_staff = new MySqlCommand("DELETE FROM department_store.staff where Staff_ID = '" + this.staff_id.Text + "';", Con);
-                try
-                {
-                    Con.Open();
-                    delete_staff.ExecuteNonQuery();
-                    this.Message.Text = "DELETE SUCCESSFUL";
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                Con.Close();
-
-                this.staff_id.Text = "";
-                this.staff_name.Text = "";
-                this.designation.Text = "";
-                this.phone_number.Text = "";
-                this.address.Text = "";
-                this.salary.Text = "";
-                this.Message.Text = "";
-            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

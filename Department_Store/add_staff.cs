@@ -31,22 +31,36 @@ namespace Department_Store
             string myconn = "datasource=localhost;port=3306;username=root;password=";
             MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
             MySqlConnection Con = new MySqlConnection(myconn);
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO department_store.staff values ('" + this.staff_id.Text + "','" + this.staff_name.Text + "','" + this.designation.Text + "','" + this.phone_number.Text + "','" + this.address.Text + "'," + this.salary.Text + ");", Con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO department_store.staff values ('" + this.staff_id.Text + "','" + this.staff_name.Text + "','"+this.sex.Text+"','" + this.designation.Text + "','" + this.phone_number.Text + "','" + this.address.Text + "'," + this.salary.Text + ");", Con);    
             try
             {
                 Con.Open();
+
                 cmd.ExecuteNonQuery();
-                count = 1;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+
+                if (this.designation.Text == "Cashier")
+                {
+                    new_login form = new new_login(this.staff_id.Text);
+                    form.Show();
+                }
+                else
+                    this.messagebox.Text = "STAFF ADDED SUCCESSFULLY!!!";
             }
 
-            if (count == 1)
+            catch (Exception ex)
             {
-                this.status.Text = "STAFF ADDED SUCCESSFULLY!!!";
+                Console.Write(ex);
+                MessageBox.Show("Please Input All the Details!!");
             }
+            Con.Close();
+
+            this.staff_id.Text = "";
+            this.staff_name.Text = "";
+            this.sex.Text = "";
+            this.designation.Text = "";
+            this.phone_number.Text = "";
+            this.address.Text = "";
+            this.salary.Text = "";
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -57,7 +71,7 @@ namespace Department_Store
             this.phone_number.Text = "";
             this.address.Text = "";
             this.salary.Text = "";
-            this.status.Text = "";
+            this.messagebox.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -67,21 +81,16 @@ namespace Department_Store
             form.Show();
 
         }
+        public void getStatus()
+        {
+            MessageBox.Show("New Cashier Added!");
+        }
 
         private void add_staff_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
 
-        private void staff_id_Click(object sender, EventArgs e)
-        {
-            this.status.Text = "";
-            this.staff_id.Text = "";
-            this.staff_name.Text = "";
-            this.designation.Text = "";
-            this.phone_number.Text = "";
-            this.address.Text = "";
-            this.salary.Text = "";
-        }
+        
     }
 }

@@ -69,7 +69,6 @@ D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.exe
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.pdb
 D:\KU Project\Departmental_Store\Department_Store\bin\Debug\Department_Store.exe
 D:\KU Project\Departmental_Store\Department_Store\bin\Debug\Department_Store.pdb
-D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.csprojResolveAssemblyReference.cache
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_product.resources
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_staff.resources
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.modify_staff.resources
@@ -140,3 +139,4 @@ D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.Product_up
 D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.Properties.Resources.resources
 D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.csproj.GenerateResource.Cache
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.billing.resources
+D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.new_login.resources

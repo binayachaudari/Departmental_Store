@@ -87,6 +87,12 @@
     <Compile Include="modify_staff.Designer.cs">
       <DependentUpon>modify_staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="new_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="new_login.Designer.cs">
+      <DependentUpon>new_login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Product_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +139,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="modify_staff.resx">
       <DependentUpon>modify_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="new_login.resx">
+      <DependentUpon>new_login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Product_info.resx">
       <DependentUpon>Product_info.cs</DependentUpon>
