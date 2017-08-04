@@ -63,6 +63,12 @@
     <Compile Include="add_staff.Designer.cs">
       <DependentUpon>add_staff.cs</DependentUpon>
     </Compile>
+    <Compile Include="billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billing.Designer.cs">
+      <DependentUpon>billing.cs</DependentUpon>
+    </Compile>
     <Compile Include="customer_info.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="add_staff.resx">
       <DependentUpon>add_staff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billing.resx">
+      <DependentUpon>billing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="customer_info.resx">
       <DependentUpon>customer_info.cs</DependentUpon>

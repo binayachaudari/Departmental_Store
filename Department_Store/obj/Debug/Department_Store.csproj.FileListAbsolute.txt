@@ -119,3 +119,7 @@ D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.add_cus
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.customer_info.resources
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources
+D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.billing.resources
+D:\Backup\Departmental_Store\Department_Store\bin\Debug\Department_Store.exe.config
+D:\Backup\Departmental_Store\Department_Store\obj\Debug\Department_Store.exe
+D:\Backup\Departmental_Store\Department_Store\obj\Debug\Department_Store.pdb

@@ -125,6 +125,20 @@ namespace Department_Store
             edit_customer form = new edit_customer(staffid);
             form.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            billing fm = new billing(staffid);
+            fm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            billing fm = new billing(staffid);
+            fm.Show();
+        }
       
     }
 }

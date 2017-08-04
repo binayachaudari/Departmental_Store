@@ -59,7 +59,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(236, 55);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
+            this.textBox1.Size = new System.Drawing.Size(147, 20);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -76,7 +76,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(407, 52);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(78, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@
             "toiletaries"});
             this.comboBox1.Location = new System.Drawing.Point(236, 22);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(147, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "beverage";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);

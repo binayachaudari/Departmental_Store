@@ -186,6 +186,7 @@
             this.label1.Size = new System.Drawing.Size(51, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "Billing";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -241,6 +242,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(113, 113);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // main_page
             // 
