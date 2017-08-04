@@ -131,7 +131,7 @@ namespace Department_Store
         private void UpdateProduct_Click(object sender, EventArgs e)
         {
             string query ="";
-            int count = 0;
+           
             string myconn = "datasource=localhost;port=3306;username=root;password=";
             MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
             MySqlConnection Con = new MySqlConnection(myconn);

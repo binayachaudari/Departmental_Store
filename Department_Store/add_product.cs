@@ -24,7 +24,7 @@ namespace Department_Store
             string myconn = "datasource=localhost;port=3306;username=root;password=";
             MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
             MySqlConnection Con = new MySqlConnection(myconn);
-            MySqlCommand command = new MySqlCommand("INSERT INTO department_store." + this.category.Text + " values('" + this.ProductName.Text + "'," + this.Quantity.Text + ", '" + this.manufacturer.Text + "'," + this.Rate.Text + ");", Con);
+            MySqlCommand command = new MySqlCommand("INSERT INTO department_store." + this.category.Text + " values('" + this.product_name.Text + "'," + this.Quantity.Text + ", '" + this.manufacturer.Text + "'," + this.Rate.Text + ");", Con);
             
             try
             {
@@ -40,7 +40,7 @@ namespace Department_Store
             Con.Close();
 
             this.category.Text = "none";
-            this.ProductName.Text = "";
+            this.product_name.Text = "";
             this.Quantity.Text="";
             this.Rate.Text="";
             this.manufacturer.Text = "";

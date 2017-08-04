@@ -47,7 +47,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.salequantity_txt = new System.Windows.Forms.TextBox();
             this.unit_price_txt = new System.Windows.Forms.TextBox();
-            this.item_name = new System.Windows.Forms.TextBox();
+            this.item_name_txt = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -66,16 +66,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.keyword = new System.Windows.Forms.TextBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupBox1.Controls.Add(this.order_btn);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button4);
@@ -84,7 +90,7 @@
             this.groupBox1.Controls.Add(this.groupBox5);
             this.groupBox1.Location = new System.Drawing.Point(3, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(476, 511);
+            this.groupBox1.Size = new System.Drawing.Size(477, 684);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -129,9 +135,9 @@
             this.groupBox4.Controls.Add(this.textBox10);
             this.groupBox4.Controls.Add(this.label12);
             this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Location = new System.Drawing.Point(3, 322);
+            this.groupBox4.Location = new System.Drawing.Point(0, 386);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(471, 166);
+            this.groupBox4.Size = new System.Drawing.Size(471, 199);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "GRAND TOTAL";
@@ -190,6 +196,7 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.addtocart_button);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.totalamount_txt);
@@ -197,22 +204,22 @@
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.salequantity_txt);
             this.groupBox3.Controls.Add(this.unit_price_txt);
-            this.groupBox3.Controls.Add(this.item_name);
+            this.groupBox3.Controls.Add(this.item_name_txt);
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Location = new System.Drawing.Point(6, 182);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(348, 141);
+            this.groupBox3.Size = new System.Drawing.Size(465, 198);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "ITEM DETAIL";
             // 
             // addtocart_button
             // 
-            this.addtocart_button.Location = new System.Drawing.Point(9, 104);
+            this.addtocart_button.Location = new System.Drawing.Point(12, 117);
             this.addtocart_button.Name = "addtocart_button";
-            this.addtocart_button.Size = new System.Drawing.Size(336, 23);
+            this.addtocart_button.Size = new System.Drawing.Size(166, 42);
             this.addtocart_button.TabIndex = 15;
             this.addtocart_button.Text = "Add to Cart";
             this.addtocart_button.UseVisualStyleBackColor = true;
@@ -257,20 +264,23 @@
             this.salequantity_txt.Name = "salequantity_txt";
             this.salequantity_txt.Size = new System.Drawing.Size(83, 20);
             this.salequantity_txt.TabIndex = 13;
+            this.salequantity_txt.TextChanged += new System.EventHandler(this.salequantity_txt_TextChanged);
             // 
             // unit_price_txt
             // 
+            this.unit_price_txt.Enabled = false;
             this.unit_price_txt.Location = new System.Drawing.Point(85, 73);
             this.unit_price_txt.Name = "unit_price_txt";
             this.unit_price_txt.Size = new System.Drawing.Size(83, 20);
             this.unit_price_txt.TabIndex = 12;
             // 
-            // item_name
+            // item_name_txt
             // 
-            this.item_name.Location = new System.Drawing.Point(85, 23);
-            this.item_name.Name = "item_name";
-            this.item_name.Size = new System.Drawing.Size(150, 20);
-            this.item_name.TabIndex = 10;
+            this.item_name_txt.Location = new System.Drawing.Point(85, 23);
+            this.item_name_txt.Name = "item_name_txt";
+            this.item_name_txt.Size = new System.Drawing.Size(150, 20);
+            this.item_name_txt.TabIndex = 10;
+            this.item_name_txt.TextChanged += new System.EventHandler(this.item_name_txt_TextChanged);
             // 
             // label15
             // 
@@ -365,6 +375,7 @@
             this.date_txt.Name = "date_txt";
             this.date_txt.Size = new System.Drawing.Size(163, 20);
             this.date_txt.TabIndex = 5;
+            this.date_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label5
             // 
@@ -406,8 +417,7 @@
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -417,7 +427,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.ReadOnly = true;
             this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(476, 421);
+            this.dataGridView1.Size = new System.Drawing.Size(845, 242);
             this.dataGridView1.TabIndex = 13;
             // 
             // label2
@@ -462,27 +472,66 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Keyword";
             // 
-            // textBox1
+            // keyword
             // 
-            this.textBox1.Location = new System.Drawing.Point(669, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 20);
-            this.textBox1.TabIndex = 15;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.keyword.Location = new System.Drawing.Point(669, 59);
+            this.keyword.Name = "keyword";
+            this.keyword.Size = new System.Drawing.Size(144, 20);
+            this.keyword.TabIndex = 15;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dataGridView2.Location = new System.Drawing.Point(486, 443);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowTemplate.ReadOnly = true;
+            this.dataGridView2.ShowEditingIcon = false;
+            this.dataGridView2.Size = new System.Drawing.Size(845, 242);
+            this.dataGridView2.TabIndex = 19;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.label3.Location = new System.Drawing.Point(828, 414);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(259, 19);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "SELECT A ROW TO EDIT THE CART";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(217, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(166, 42);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Update Cart";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // billing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(963, 516);
+            this.ClientSize = new System.Drawing.Size(1332, 697);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.keyword);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "billing";
             this.Text = "billing";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.billing_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
@@ -492,6 +541,7 @@
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,7 +568,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox salequantity_txt;
         private System.Windows.Forms.TextBox unit_price_txt;
-        private System.Windows.Forms.TextBox item_name;
+        private System.Windows.Forms.TextBox item_name_txt;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
@@ -537,6 +587,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox keyword;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

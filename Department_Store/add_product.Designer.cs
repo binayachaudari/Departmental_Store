@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label2 = new System.Windows.Forms.Label();
-            this.ProductName = new System.Windows.Forms.TextBox();
+            this.product_name = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Quantity = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,12 +53,12 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Product Name :";
             // 
-            // ProductName
+            // product_name
             // 
-            this.ProductName.Location = new System.Drawing.Point(174, 88);
-            this.ProductName.Name = "ProductName";
-            this.ProductName.Size = new System.Drawing.Size(156, 20);
-            this.ProductName.TabIndex = 5;
+            this.product_name.Location = new System.Drawing.Point(174, 88);
+            this.product_name.Name = "product_name";
+            this.product_name.Size = new System.Drawing.Size(156, 20);
+            this.product_name.TabIndex = 5;
             // 
             // label3
             // 
@@ -186,7 +186,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Quantity);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.ProductName);
+            this.Controls.Add(this.product_name);
             this.Controls.Add(this.label2);
             this.Name = "add_product";
             this.ShowIcon = false;
@@ -200,7 +200,7 @@
         #endregion
 
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox ProductName;
+        private System.Windows.Forms.TextBox product_name;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Quantity;
         private System.Windows.Forms.Label label4;

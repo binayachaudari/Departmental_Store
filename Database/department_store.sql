@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 02, 2017 at 02:29 PM
+-- Generation Time: Aug 03, 2017 at 03:38 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -63,17 +63,6 @@ INSERT INTO `beverage` (`item_name`, `quantity`, `manu_id`, `price`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
---
-
-CREATE TABLE `categories` (
-  `category` varchar(15) NOT NULL,
-  `sub_category` varchar(15) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `cereal`
 --
 
@@ -114,9 +103,18 @@ INSERT INTO `chocolate` (`item_name`, `quantity`, `manu_id`, `price`) VALUES
 
 CREATE TABLE `customer` (
   `cust_id` varchar(10) NOT NULL,
-  `cust_Fname` varchar(10) NOT NULL,
-  `cust_Lname` varchar(10) NOT NULL
+  `customer_name` varchar(20) DEFAULT NULL,
+  `address` varchar(20) DEFAULT NULL,
+  `phone_number` varchar(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`cust_id`, `customer_name`, `address`, `phone_number`) VALUES
+('1', 'Birat', 'Sanga', '9842568435'),
+('2', 'Rasil Baidar', 'Banepa', '9843532537');
 
 -- --------------------------------------------------------
 
@@ -262,10 +260,10 @@ CREATE TABLE `orders_product_detail` (
 --
 
 CREATE TABLE `sales_data` (
-  `bill_id` int(10) NOT NULL,
-  `timestamp` date DEFAULT NULL,
+  `bill_no` varchar(15) NOT NULL,
   `amount` float(25,2) DEFAULT NULL,
-  `cust_id` varchar(10) DEFAULT NULL
+  `cust_id` varchar(10) DEFAULT NULL,
+  `timestamp` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -278,7 +276,7 @@ CREATE TABLE `staff` (
   `Staff_ID` varchar(10) NOT NULL,
   `staff_name` varchar(32) DEFAULT NULL,
   `Designation` varchar(10) DEFAULT NULL,
-  `phone_num` bigint(15) DEFAULT NULL,
+  `phone_num` varchar(11) DEFAULT NULL,
   `address` varchar(10) DEFAULT NULL,
   `salary` int(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -288,11 +286,11 @@ CREATE TABLE `staff` (
 --
 
 INSERT INTO `staff` (`Staff_ID`, `staff_name`, `Designation`, `phone_num`, `address`, `salary`) VALUES
-('1', 'prabish', 'manager', 2147483647, 'banepa', 40000),
-('12', 'sjdflgksj', 'sjgkldfj', 98980986951, 'sfdgsfg', 516119),
-('2', 'Rasil', 'Salesboy', 9813548698, 'Banepa', 5000),
-('3', 'Rojan Bade', 'Toilet Cle', 9841547865, 'Banepa', 1000),
-('5', 'Birat', 'Churotey', 9841543745, 'Sanga', 200);
+('1', 'Prabish', 'manager', '2147483647', 'Banepa', 50000),
+('12', 'Ram Manadhar', 'salesman', '9898098695', 'Butwal', 80000),
+('2', 'Rasil', 'salesboy', '9813548698', 'Banepa', 6000),
+('3', 'susmita', 'accountant', '9843547815', 'Panauti', 12000),
+('5', 'Birat', 'salesman', '9841543745', 'Sanga', 5000);
 
 -- --------------------------------------------------------
 
@@ -324,12 +322,6 @@ ALTER TABLE `bakery`
 ALTER TABLE `beverage`
   ADD PRIMARY KEY (`item_name`),
   ADD KEY `manu_id` (`manu_id`);
-
---
--- Indexes for table `categories`
---
-ALTER TABLE `categories`
-  ADD PRIMARY KEY (`category`,`sub_category`);
 
 --
 -- Indexes for table `cereal`
@@ -414,7 +406,6 @@ ALTER TABLE `orders_product_detail`
 -- Indexes for table `sales_data`
 --
 ALTER TABLE `sales_data`
-  ADD PRIMARY KEY (`bill_id`),
   ADD KEY `cust_id` (`cust_id`);
 
 --
@@ -439,11 +430,6 @@ ALTER TABLE `toiletaries`
 --
 ALTER TABLE `orders`
   MODIFY `order_id` int(15) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `sales_data`
---
-ALTER TABLE `sales_data`
-  MODIFY `bill_id` int(10) NOT NULL AUTO_INCREMENT;
 --
 -- Constraints for dumped tables
 --
@@ -506,7 +492,7 @@ ALTER TABLE `junk_food`
 -- Constraints for table `login`
 --
 ALTER TABLE `login`
-  ADD CONSTRAINT `login_ibfk_1` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`Staff_ID`);
+  ADD CONSTRAINT `login_ibfk_1` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`staff_id`);
 
 --
 -- Constraints for table `orders_product_detail`

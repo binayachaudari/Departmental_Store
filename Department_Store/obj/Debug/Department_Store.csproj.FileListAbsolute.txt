@@ -120,6 +120,23 @@ D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.custome
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources
 D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.edit_customer.resources
 D:\GITHUB\Departmental_Store\Department_Store\obj\Debug\Department_Store.billing.resources
-D:\Backup\Departmental_Store\Department_Store\bin\Debug\Department_Store.exe.config
-D:\Backup\Departmental_Store\Department_Store\obj\Debug\Department_Store.exe
-D:\Backup\Departmental_Store\Department_Store\obj\Debug\Department_Store.pdb
+D:\GITHUB\DepartmentStore\Department_Store\bin\Debug\Department_Store.exe.config
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.exe
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.pdb
+D:\GITHUB\DepartmentStore\Department_Store\bin\Debug\Department_Store.exe
+D:\GITHUB\DepartmentStore\Department_Store\bin\Debug\Department_Store.pdb
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.csprojResolveAssemblyReference.cache
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.add_customer.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.add_product.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.add_staff.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.billing.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.customer_info.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.edit_customer.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.modify_staff.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.Product_info.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.login_form.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.main_page.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.Product_update.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.Properties.Resources.resources
+D:\GITHUB\DepartmentStore\Department_Store\obj\Debug\Department_Store.csproj.GenerateResource.Cache
+D:\KU Project\Departmental_Store\Department_Store\obj\Debug\Department_Store.billing.resources

@@ -128,7 +128,6 @@ namespace Department_Store
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Hide();
             billing fm = new billing(staffid);
             fm.Show();
         }
